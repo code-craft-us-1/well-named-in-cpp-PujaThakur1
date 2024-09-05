@@ -3,7 +3,12 @@
 #include "ColorPair.h"
 namespace TelCoColorCoder
 {
-    std::string printColorCodingManual(){
+
+class Formatter
+{
+
+public:
+static std::string printColorCodingManual(){
         std::string message = "Color Coding Manual\n";
         for(int pairNumber = 1; pairNumber <= 25; pairNumber++) {
             ColorPair colorPair = GetColorFromPairNumber(pairNumber);
@@ -14,6 +19,8 @@ namespace TelCoColorCoder
         }
         return message;
     }
+}
+    
     void testNumberToPair(int pairNumber,
         TelCoColorCoder::MajorColor expectedMajor,
         TelCoColorCoder::MinorColor expectedMinor)
@@ -43,6 +50,6 @@ namespace TelCoColorCoder
         //testPairToNumber(TelCoColorCoder::BLACK, TelCoColorCoder::ORANGE, 12);
         //testPairToNumber(TelCoColorCoder::VIOLET, TelCoColorCoder::SLATE, 25);
 
-        std::cout<< TelCoColorCoder::printColorCodingManual();
+        std::cout<< TelCoColorCoder::Formatter::printColorCodingManual();
         return 0;
     }
