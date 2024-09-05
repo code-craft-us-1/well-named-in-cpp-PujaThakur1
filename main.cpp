@@ -4,7 +4,7 @@
 namespace TelCoColorCoder
 {
 
-class Formatter
+/*class Formatter
 {
 
 public:
@@ -19,7 +19,7 @@ static std::string printColorCodingManual(){
         }
         return message;
     }
-}
+}*/
     
     void testNumberToPair(int pairNumber,
         TelCoColorCoder::MajorColor expectedMajor,
@@ -50,6 +50,6 @@ static std::string printColorCodingManual(){
         //testPairToNumber(TelCoColorCoder::BLACK, TelCoColorCoder::ORANGE, 12);
         //testPairToNumber(TelCoColorCoder::VIOLET, TelCoColorCoder::SLATE, 25);
 
-        std::cout<< TelCoColorCoder::Formatter::printColorCodingManual();
+        std::cout<< TelCoColorCoder::printColorCodingManual();
         return 0;
     }
