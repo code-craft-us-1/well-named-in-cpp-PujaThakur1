@@ -1,7 +1,6 @@
 #include <iostream>
 #include <assert.h>
 
-
 namespace TelCoColorCoder
 {
     enum MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET};
@@ -47,11 +46,10 @@ namespace TelCoColorCoder
         MinorColor minorColor =
             (MinorColor)(zeroBasedPairNumber % numberOfMinorColors);
         return ColorPair(majorColor, minorColor);
-
     }
     int GetPairNumberFromColor(MajorColor major, MinorColor minor) {
         return major * numberOfMinorColors + minor + 1;
-
+    }
 }
 
 void testNumberToPair(int pairNumber,
@@ -84,5 +82,3 @@ int main() {
 
     return 0;
 }
-
-   
